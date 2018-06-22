@@ -1,0 +1,43 @@
+﻿@model  CelsiusToFahrenViewModel
+
+    @{ 
+        ViewBag.Title = "CelsiustoFahren";
+    }
+
+<div class="row">
+    <div class="padding">
+
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4 offset-md-4">
+        <div class="title header">
+            Unit Conversion
+        </div>
+
+    </div>
+</div>
+<div class="row">
+    <div class="padding2">
+        @Model 
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4 offset-md-4">
+        <div class="conversion">
+            <p class="subheader">Celsius to Fahrenheit</p>
+
+            <div>
+                <form action="CelsiusToFahren2" method="post">
+                    <input name="celsius" type="number" step="any" placeholder="celsius"/>
+                    <input name="fahrenheit" type="number" step="any" placeholder="Fahrenheit"/>
+                    <input name="convert" type="submit" class="button" />
+                </form>
+                <p>Celsius: @Model.Celsius</p>
+                <p>Fahrenheit: @Model.Fahrenheit</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+
