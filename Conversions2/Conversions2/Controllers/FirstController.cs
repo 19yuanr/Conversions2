@@ -17,27 +17,6 @@ namespace Conversions2.Controllers
             return View();
         }
 
-        public ActionResult CentToInch(){
-            CentToInchViewModel tom = new CentToInchViewModel();
-            tom.Cent = 0.0;
-            tom.Inch = 0.0;
-            return View(viewName: "CentToInch", model: tom);
-        }
-  
-        [HttpPost]
-        public ActionResult sayCentToInch(double cent, double inch){
-            CentToInchViewModel bob = new CentToInchViewModel();
-            if(cent == 0){
-                bob.Cent = inch * 2.54;
-                bob.Inch = inch;
-            }
-            if (inch == 0)
-            {
-                bob.Inch = cent / 2.54;
-                bob.Cent = cent;
-            }
-            return View(viewName: "CentToInch", model: bob);
-        }
        
     }
 }
