@@ -35,7 +35,7 @@ namespace Conversions2.Controllers
             }
             if (Feet - 0.0 < .0000001)
             {
-                temp.Feet = Meters * 0.3048;
+                temp.Feet = Meters * 3.28;
                 temp.Meters = Meters;
             }
             return View(viewName: "MetersToFeet", model: temp);
