@@ -11,8 +11,20 @@
   <ItemGroup>
     <Content Remove="wwwroot\css\bootstrap.css" />
     <Content Remove="wwwroot\css\style.css" />
+    <Content Remove="Views\First\milesToFathoms.cshtml" />
+    <Content Remove="Views\First\MilesToFathoms.cshtml" />
+    <Content Remove="Views\MilesToFathoms\MilesToFathoms.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\First\" />
+    <Folder Include="Views\MilesToFathoms\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Models\Startup.cs" />
+    <Compile Remove="Models\EmptyClass.cs" />
+    <Compile Remove="Controllers\MilesToFathoms.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Views\MilesToFathoms\MilesToFathoms.cshtml" />
   </ItemGroup>
 </Project>

@@ -1,2 +1,41 @@
 ﻿body {
+    background-image: url("StripeDev.jpg")
+}
+
+.padding {
+    padding-top: 40px;
+}
+
+.title {
+    background-color: white;
+    text-align: center;
+    height: 70px;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.padding2 {
+    height: 80px;
+}
+
+.conversion {
+    background-color: white;
+    height: 300px;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+.subheader {
+    font-family: "Maven Pro";
+    font-size: 24px;
+}
+
+.header {
+    font-family: "Secular One";
+    font-size: 36px;
+}
+
+.body {
+    font-family: "Pontano Sans";
+    font-size: 14px;
 }

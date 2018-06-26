@@ -1,0 +1,38 @@
+﻿@model MilesToFathomsViewModel
+@{
+    ViewBag.Title = "MilesToFathoms";
+}
+
+    <div class="row">
+        <div class="padding">
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 offset-md-4">
+            <div class="title header">
+                Unit Conversion
+            </div>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="padding2"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 offset-md-4">
+            <div class="conversion">
+                <p class="subheader">
+                    Miles to Fathoms
+                </p>
+                <form action="SayMilesToFathoms" method="post">
+                    <p> <input name="miles" type="number" step="any" placeholder="Miles" />
+                    <input name="fathoms" type="number" step="any" placeholder="Fathoms" /></p>
+                    <input name="submit" type="submit" />
+                </form>
+                <p> Miles: @Model.Miles </p>
+                <p> Fathoms: @Model.Fathoms</p>
+
+            </div>
+        </div>
+    </div>
