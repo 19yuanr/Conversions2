@@ -1,0 +1,38 @@
+﻿@model MetersToFeetViewModel
+@{
+    ViewBag.Title = "MetersToFeet";
+}
+
+    <div class="row">
+        <div class="padding">
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 offset-md-4">
+            <div class="title header">
+                Unit Conversion
+            </div>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="padding2"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 offset-md-4">
+            <div class="conversion">
+                <p class="subheader">
+                    Meters to Feet
+                </p>
+                <form action="SayMetersToFeet" method="post">
+                    <p> <input name="Meters" type="number" step="any" placeholder="Meters" />
+                    <input name="Feet" type="number" step="any" placeholder="Feet" /></p>
+                    <input name="submit" type="submit" />
+                </form>
+                <p> Meters: @Model.Meters </p>
+                <p> Feet: @Model.Feet</p>
+
+            </div>
+        </div>
+    </div>
