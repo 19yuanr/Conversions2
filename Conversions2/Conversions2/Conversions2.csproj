@@ -13,8 +13,14 @@
   <ItemGroup>
     <Content Remove="wwwroot\css\bootstrap.css" />
     <Content Remove="wwwroot\css\style.css" />
+    <Content Remove="Views\First\CentToInch.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\First\" />
+    <Folder Include="Views\CentToInch\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Controllers\CentToInch.cs" />
+    <Compile Remove="Controllers\CentToInch.cs" />
   </ItemGroup>
 </Project>
