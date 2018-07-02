@@ -2,10 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
+    <NoWin32Manifest>true</NoWin32Manifest>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -15,10 +17,13 @@
     <Content Remove="Views\First\milesToFathoms.cshtml" />
     <Content Remove="Views\First\MilesToFathoms.cshtml" />
     <Content Remove="Views\MilesToFathoms\MilesToFathoms.cshtml" />
+    <Content Remove="Views\First\CentToInch.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\First\" />
+    <Folder Include="Views\CelsiusToFahren\" />
     <Folder Include="Views\MilesToFathoms\" />
+    <Folder Include="Views\CentToInch\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Models\Startup.cs" />
@@ -28,5 +33,9 @@
   <ItemGroup>
     <None Include="Views\MetersToFeet\MetersToFeet.cshtml" />
     <None Include="Views\MilesToFathoms\MilesToFathoms.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Controllers\CentToInch.cs" />
+    <Compile Remove="Controllers\CentToInch.cs" />
   </ItemGroup>
 </Project>
