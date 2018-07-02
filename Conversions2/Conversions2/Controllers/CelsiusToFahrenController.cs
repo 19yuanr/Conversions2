@@ -36,7 +36,7 @@ namespace Conversions2.Controllers
             }
             if (fahrenheit == 0.0)
             {
-                bob.Fahrenheit = (celsius * 1.8) + 16;
+                bob.Fahrenheit = (celsius * 1.8) + 32;
                 bob.Celsius = celsius;
 
             }
