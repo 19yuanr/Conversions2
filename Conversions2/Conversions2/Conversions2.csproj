@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\First\" />
+    <Folder Include="Views\CelsiusToFahren\" />
     <Folder Include="Views\MilesToFathoms\" />
     <Folder Include="Views\CentToInch\" />
   </ItemGroup>
