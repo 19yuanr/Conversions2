@@ -1,0 +1,42 @@
+﻿@model CentToInchViewModel
+
+    @{ 
+        ViewBag.Title = "CentToInch";
+    }
+
+
+<div class="row">
+    <div class="padding">
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4 offset-md-4">
+        <div class="title header">
+            Unit Conversion
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="padding2">
+
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4 offset-md-4">
+        <div class="conversion">
+            <div class="subheader">Centimeters to Inches</div>
+
+            <div>
+                <form action="sayCentToInch" method="post">
+                    <input name="cent" type ="number" step="any" placeholder="centimeters"/>
+                    <input name="inch" type ="number" step ="any" placeholder="inches"/>
+                    <input name="convert" class="button" type="submit" />
+
+                </form>
+                <p>Centimeters: @Model.Cent</p>
+                <p>Inches: @Model.Inch</p>
+            
+            </div>
+        </div>
+    </div>
+    </div>
